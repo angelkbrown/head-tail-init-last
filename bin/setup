@@ -1,0 +1,20 @@
+#!/bin/sh
+set -e
+
+[ ! -d .cabal-sandbox ] && cabal sandbox init
+
+cabal install --dependencies-only --enable-tests
+cabal test || true
+
+cat <<EOF
+
+All set!
+
+Edit src/HeadTailInitLast.hs and implement each function using `head`, `tail`,
+`init`, and `last`.
+
+You'll need to use `if`, `else`, and `length` to check the length of each list.
+
+Run `cabal test` to re-run the tests at any time.
+
+EOF

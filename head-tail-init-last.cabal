@@ -1,0 +1,31 @@
+Name:                   head-tail-init-last
+Version:                0.0.0
+Author:                 Joe Ferris <jferris@thoughtbot.com>
+Maintainer:             Joe Ferris <jferris@thoughtbot.com>
+License:                MIT
+License-File:           LICENSE
+-- Synopsis:               Short description, appears in Hackage listings
+-- Description:            Long explanation, appears at top of project page
+Cabal-Version:          >= 1.10
+Build-Type:             Simple
+
+Library
+  Default-Language:     Haskell2010
+  HS-Source-Dirs:       src
+  GHC-Options:          -Wall
+  Exposed-Modules:      HeadTailInitLast
+  Build-Depends:        base >= 4 && < 5
+
+Test-Suite spec
+  Type:                 exitcode-stdio-1.0
+  Default-Language:     Haskell2010
+  Hs-Source-Dirs:       test
+  Ghc-Options:          -Wall
+  Main-Is:              Spec.hs
+  Build-Depends:        base
+                      , head-tail-init-last
+                      , hspec
+
+Source-Repository head
+  Type:                 git
+  Location:             https://github.com/pbrisbin/head-tail-init-last
