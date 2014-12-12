@@ -23,7 +23,7 @@ spec = do
             secondToLast [1, 2] `shouldBe` 1
             secondToLast [1, 2, 3] `shouldBe` 2
             secondToLast [1, 2, 3, 4] `shouldBe` 3
-        it "returns zero empty list with fewer than two items" $ do
+        it "returns zero with fewer than two items" $ do
             secondToLast [] `shouldBe` 0
             secondToLast [1] `shouldBe` 0
     describe "ends" $ do
