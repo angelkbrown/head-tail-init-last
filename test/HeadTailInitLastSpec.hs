@@ -16,7 +16,7 @@ spec = do
             middle "abcde" `shouldBe` "bcd"
         it "returns an empty list with fewer than three items" $ do
             middle "" `shouldBe` ""
-            middle "a" `shouldBe` ""
+            middle "m" `shouldBe` ""
             middle "ab" `shouldBe` ""
     describe "secondToLast" $ do
         it "returns the second to last number" $ do
